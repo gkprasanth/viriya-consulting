@@ -1,0 +1,107 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f2f5fc;
+}
+
+.my-button {
+  background: #4154f1;
+  border: none;
+  width: fit-content;
+  color: white;
+  font-size: 1rem;
+  padding: 0.8rem 2.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+.my-button:hover {
+  box-shadow: 5px 5px #99bdff;
+  transition: 0.3s;
+  background: #ff7294;
+}
+
+.about-btn {
+  background: #4154f1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  width: fit-content;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+}
+
+.about-btn:hover {
+  box-shadow: 5px 5px #99bdff;
+  transition: 0.3s;
+  background: #ff7294;
+}
+
+.my-button1 {
+  background: #4154f1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  width: fit-content;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+}
+
+.my-button1:hover {
+  background: #ff7294;
+  color: #fff;
+}
+
+.my-button2 {
+  background: #4154f1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 540;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.3s;
+  width: fit-content;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+}
+
+.my-button2:hover {
+  background: #ff7294;
+  color: #fff;
+}
+
+@keyframes about {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

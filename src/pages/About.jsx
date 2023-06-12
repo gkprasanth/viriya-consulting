@@ -22,7 +22,13 @@ const About = () => {
       }}
     >
       <CssBaseline />
-      <Stack direction={"column"}>
+      <Stack direction={"column"}
+        sx={{
+          "@media (max-width: 1200px)": {
+            mb: "30px"
+          }
+        }}
+      >
         <Typography
           variant="h2"
           fontWeight={"bold"}
@@ -37,6 +43,10 @@ const About = () => {
             height: "3px",
             backgroundColor: "#569050",
             alignSelf: "center",
+
+            "@media (max-width: 900px)": {
+              height: "4px"
+            }
           }}
         />
       </Stack>
@@ -51,6 +61,12 @@ const About = () => {
             justifyContent: "center",
             alignItems: "center",
             "@media (max-width: 800px)": {
+              flexDirection: "column-reverse",
+            },
+            "@media (max-width: 900px)": {
+              flexDirection: "column-reverse",
+            },
+            "@media (max-width: 1200px)": {
               flexDirection: "column-reverse",
             },
           }}
@@ -108,8 +124,8 @@ const About = () => {
                 },
 
                 "@media (max-width: 400px)": {
-                  width: "100vw",
-                  fontSize: "1.1rem",
+                  width: "100%",
+                  fontSize: "1rem",
                   justifyContent: "center",
                   alignItems: "center",
                   mx: "auto",
@@ -135,13 +151,8 @@ const About = () => {
           <img
             src={abt1}
             width={"550px"}
-            style={{
-              "@media (max-width: 600px)": {
-                width: "300px",
-              },
-              "@media (max-width: 800px)": {
-                width: "400px",
-              },
+
+            style={{            
               position: "relative",
               bottom: "50px",
             }}

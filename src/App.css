@@ -3,7 +3,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f2f5fc;
+  background-image: url("./App.jsx/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .my-button {
@@ -103,5 +105,41 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+
+
+/*Carousel*/
+
+.container{
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.slider{
+  height: 100px;
+  margin: auto;
+  /* overflow: hidden; */
+  position: relative;
+  width: auto;
+ 
+} 
+
+.slide-track{
+  margin: auto;
+  width: auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll{
+ 
+  100%{
+    transform: translateX(-100%);
   }
 }

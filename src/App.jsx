@@ -12,6 +12,8 @@ import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
+import ContactFooter from "./components/ContactFooter";
+import Carousel from "./components/Carousel";
 
 function App() {
   return (
@@ -22,8 +24,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/slider" element={<Carousel />} />
         </Routes>
-        <Footer />
+        <ContactFooter/>
+        <Footer/>
+        
       </Router>
     </>
   );

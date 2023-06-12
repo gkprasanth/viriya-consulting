@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import Contact from "../components/Contact";
 import KeyStrengths from "../components/KeyStrengths";
 
+
 const list = [
   {
     title: "Customized and Targeted Talent Acquisition",
@@ -63,13 +64,34 @@ const AboutUs = () => {
           sx={{
             justifyContent: "center",
             alignItems: "center",
+            "@media (max-width: 950px)": {
+              flexDirection:"column-reverse"
+            }
+
           }}
         >
-          <Stack direction={"column"} width={"60%"} padding={8} gap={3}>
+          <Stack direction={"column"} width={"60%"} padding={8} gap={3}
+            sx={{
+              "@media (max-width: 950px)": {
+                width: "110%"
+              },
+              "@media (max-width: 500px)": {
+                width: "130%"
+              }
+            }}
+          
+          >
             <Typography variant="h4" color={"#012970"} textAlign={"start"}>
               About Viriya
             </Typography>
-            <Typography textAlign={"justify"} fontSize={"1.2rem"}>
+            <Typography textAlign={"justify"} fontSize={"1.2rem"}
+            sx={{
+
+              "@media (max-width: 1200px)":{
+                fontSize: "1rem"
+              }
+            }}
+            >
               At Viriya Enterprises, we go beyond simply filling vacancies; we
               strive to build long-term partnerships with our clients. We take
               the time to comprehend your organization's culture, values, and
@@ -78,7 +100,15 @@ const AboutUs = () => {
               company ethos.
             </Typography>
 
-            <Typography textAlign={"justify"} fontSize={"1.2rem"}>
+            <Typography textAlign={"justify"} 
+            fontSize={"1.2rem"}
+            sx={{
+
+              "@media (max-width: 1200px)":{
+                fontSize: "1rem"
+              }
+            }}
+           >
               Our dedicated team of experienced professionals works tirelessly
               to understand the unique requirements of each client, allowing us
               to tailor our solutions accordingly. We firmly believe that the
@@ -89,7 +119,13 @@ const AboutUs = () => {
               to drive their businesses forward.
             </Typography>
           </Stack>
-          <img src={s2} width={"600px"} />
+          <img src={s2} width={"40%"} 
+            style={{
+              "@media (max-width: 950px)": {
+                width: '70%'
+              }
+            }}
+          />
         </Stack>
 
         <Stack
@@ -108,38 +144,101 @@ const AboutUs = () => {
             gap={7}
             padding={4}
             justifyContent={"space-between"}
+
+            sx={{
+              "@media (max-width: 1100px)":{
+                flexDirection: "column",
+                justifyContent: "center"
+              }
+            }}
+            
           >
             <img
-              width="800px"
+              width="40%"
               src={s1}
-              height="500px"
+              height={"50%"}
               style={{
-                position: "relative",
-                bottom: "-90px",
+                margin: "auto"
               }}
             />
-            <Stack direction={"column"} gap={2}>
-              <Typography fontSize={"2rem"} color={"#012970"} fontWeight={500}>
+            <Stack direction={"column"} gap={2}
+            
+            sx={{"@media (max-width: 950px)": {
+              width: "110%",
+              alignItems: 'center',
+              mx: "auto"
+            },
+            "@media (max-width: 500px)": {
+              width: "130%"
+
+            }
+          }}
+            >
+              <Typography fontSize={"2rem"} color={"#012970"} fontWeight={500}
+              sx={{
+                "@media (max-width: 1100px)":{
+                  textAlign: "center"
+                }
+              }}
+              >
                 Why you should Work with us
               </Typography>
-              <Typography fontSize={"1.2rem"}>
+              <Typography fontSize={"1.2rem"}
+                sx={{
+
+                  "@media (max-width: 1200px)":{
+                    fontSize: "1.1rem"
+                  }
+                }}
+              >
                 We efficiently connect exceptional talent with leading
                 organizations, delivering superior recruitment services that
                 ensure high-quality placements.
               </Typography>
 
-              <ul className="list" style={{}}>
+              <ul className="list" style={{
+                  justifyContent: "center",
+                  alignItems: "center",
+                  margin: 'auto',
+
+                  "@media (max-width: 700px)":{
+                    with: "100%"
+                  }
+
+                  
+              }}>
                 {list.map((item) => (
                   <li
                     className="list-li"
                     style={{
                       padding: "5px",
+                      margin: "auto",
+
+                      
+                        "@media (max-width: 1200px)":{
+                          fontSize: "1rem",
+                          width: "110%",
+                          position: "relative",
+                          left:"-40px"
+                        },  
+
+                        
+                                             
+                      
                     }}
                   >
                     <Typography
                       fontSize={"1.2rem"}
                       fontWeight={500}
                       textAlign={"justify"}
+
+                      sx={{
+                        "@media (max-width: 1200px)":{
+                          fontSize: "1.1rem"
+                        },
+
+                       
+                      }}
                     >
                       {" "}
                       {item.title}:{" "}
@@ -148,6 +247,15 @@ const AboutUs = () => {
                       fontSize={"1.1rem"}
                       color={""}
                       textAlign={"justify"}
+
+                     sx={{
+                      "@media (max-width: 800px)":{
+                        fontSize: "1.1rem",
+                        position: "relative",
+                        left: "-50px"
+                      }
+                     }}
+                      
                     >
                       {item.description}
                     </Typography>
@@ -159,26 +267,6 @@ const AboutUs = () => {
         </Stack>
       </Container>
       <KeyStrengths />
-
-      <Box width={"100%"} bgcolor={"#f6f9ff"} padding={5}>
-        <Stack direction={"column"} gap={1}>
-          <Typography
-            fontFamily={"Nunito Sans"}
-            fontSize={"1.5rem"}
-            fontWeight={"bold"}
-            textAlign={"center"}
-            color={"#012970"}
-          >
-            Get in touch
-          </Typography>
-
-          <Typography textAlign={"center"}>
-            Want to know how we can help you find your potential employees?
-            Let's discuss!
-          </Typography>
-          <button className="my-button1">Contact</button>
-        </Stack>
-      </Box>
     </>
   );
 };

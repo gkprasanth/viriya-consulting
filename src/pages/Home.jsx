@@ -6,7 +6,7 @@ import About from "./About";
 import OurServices from "../components/OurServices";
 import h1 from "../assets/h1.png";
 import { Fade } from "react-reveal";
-
+import ContactFooter from "../components/ContactFooter";
 const Home = () => {
   return (
     <>
@@ -18,6 +18,9 @@ const Home = () => {
         alignItems={"center"}
         mx={"auto"}
         id="home"
+        sx={{
+          bgcolor: "transparent",
+        }}
       >
         <Stack
           direction={"column"}
@@ -69,6 +72,8 @@ const Home = () => {
       </Stack>
       <About />
       <OurServices />
+
+      
     </>
   );
 };

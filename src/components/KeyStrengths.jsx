@@ -44,10 +44,23 @@ const KeyStrengths = () => {
       </Typography>
       <Stack
         direction={"row-reverse"}
+
         padding={4}
         justifyContent={"center"}
         alignItems={"center"}
         gap={20}
+
+        sx={{
+          "@media (max-width: 1100px)":{
+            flexDirection: "column",
+            justifyContent: "center"
+          },
+          
+            "@media (max-width: 850px)":{
+              gap: 10 
+            }
+          
+        }}
       >
         <img
           src={img}
@@ -68,10 +81,24 @@ const KeyStrengths = () => {
                 fontSize={"1.3rem"}
                 fontWeight={500}
                 textAlign={"justify"}
+
+                sx={{
+                  "@media (max-width: 850px)":{
+                    fontSize: "1.2rem"
+                  }
+                }}
+
               >
                 {item.title}
               </Typography>
-              <Typography fontSize={"1.1rem"} color={""} textAlign={"justify"}>
+              <Typography fontSize={"1.1rem"} color={""} textAlign={"justify"}
+                sx={{
+                  "@media (max-width: 850px)":{
+                    fontSize: "1.1rem"
+                  }
+                }}
+
+              >
                 {item.text}
               </Typography>
             </li>

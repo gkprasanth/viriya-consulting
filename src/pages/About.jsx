@@ -100,10 +100,10 @@ const About = () => {
                 },
               }}
             >
-              1 year ago, Viriya Enterprises emerged as a promising startup in
+              1 year ago, Talentlink Enterprises emerged as a promising startup in
               the realm of organized recruitment. Since then, we have embarked
               on a remarkable journey, successfully shaping the careers of over
-              100 talented individuals. At Viriya Enterprises, we take immense
+              100 talented individuals. At Talentlink Enterprises, we take immense
               pride in our accomplishments and the positive impact we have made
               on both job seekers and employers.
             </Typography>

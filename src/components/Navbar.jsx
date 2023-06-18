@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 
-import logo from "../assets/logo.png";
+import logo from "../assets/logo-no-background.svg";
 
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Link as L, useNavigate } from "react-router-dom";
@@ -23,6 +23,10 @@ const Navbar = () => {
 
   function navigatePage(){
     navigate('/contact')
+  }
+
+  function handleClick(){
+    navigate('/')
   }
 
   return (
@@ -66,6 +70,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
+            onClick={handleClick}
           >
             <Typography
               fontSize={"1rem"}

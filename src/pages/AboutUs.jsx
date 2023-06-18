@@ -83,7 +83,7 @@ const AboutUs = () => {
           
           >
             <Typography variant="h4" color={"#012970"} textAlign={"start"}>
-              About Viriya
+              About Talentlink
             </Typography>
             <Typography textAlign={"justify"} fontSize={"1.2rem"}
             sx={{
@@ -93,7 +93,7 @@ const AboutUs = () => {
               }
             }}
             >
-              At Viriya Enterprises, we go beyond simply filling vacancies; we
+              At Talentlink Enterprises, we go beyond simply filling vacancies; we
               strive to build long-term partnerships with our clients. We take
               the time to comprehend your organization's culture, values, and
               objectives, enabling us to find candidates who not only possess

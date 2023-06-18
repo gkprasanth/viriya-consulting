@@ -1,7 +1,6 @@
 import React from "react";
 import "../App.css";
-import hero from "../assets/hero.jpg";
-import { Link, animateScroll as scroll } from "react-scroll";
+
 
 import { Stack, Typography } from "@mui/material";
 import About from "./About";
@@ -53,7 +52,7 @@ const Home = () => {
               }}
               color={"#012970"}
             >
-              Viriya Enterprises
+              Talentlink Enterprises
             </Typography>
           </Fade>
 

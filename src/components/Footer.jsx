@@ -2,6 +2,10 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
+import {AiOutlineLinkedin} from 'react-icons/ai'
+import {AiOutlineFacebook} from 'react-icons/ai'
+import {FiTwitter} from 'react-icons/fi'
+
 const Footer = () => {
   return (
     <><Box
@@ -21,9 +25,7 @@ const Footer = () => {
             About Us
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            We are XYZ company, dedicated to providing the best service to our
-            customers.
-          </Typography>
+          We are a company that offers comprehensive hiring solutions to our clients.          </Typography>
         </Grid>
         <Grid item xs={12} sm={4}>
           <Typography variant="h6" color="text.primary" gutterBottom>
@@ -39,23 +41,32 @@ const Footer = () => {
             Phone: +1 234 567 8901
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={4}  >
           <Typography variant="h6" color="text.primary" gutterBottom>
             Follow Us
           </Typography>
-          <Link href="https://www.facebook.com/" color="inherit">
-            {/* <Facebook /> */}
+          
+          <Link href="https://www.facebook.com/" color="inherit" style={{
+            marginRight: "15px"
+          }} >
+            <AiOutlineLinkedin/>
           </Link>
           <Link
             href="https://www.instagram.com/"
             color="inherit"
             sx={{ pl: 1, pr: 1 }}
+            style={{
+              marginRight: "15px"
+            }}
           >
-            {/* <Instagram /> */}
+           <AiOutlineFacebook/>
           </Link>
-          <Link href="https://www.twitter.com/" color="inherit">
-            {/* <Twitter /> */}
+          <Link href="https://www.twitter.com/" color="inherit" style={{
+            marginRight: "15px"
+          }} >
+          <FiTwitter/>
           </Link>
+          
         </Grid>
       </Grid>
       <Box mt={5}>

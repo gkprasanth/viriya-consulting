@@ -4,7 +4,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import logo from "../assets/logo.png";
 
 import { Link, animateScroll as scroll } from "react-scroll";
-import { Link as L } from "react-router-dom";
+import { Link as L, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [color, setColor] = React.useState(false);
@@ -18,6 +18,12 @@ const Navbar = () => {
     }
   };
   window.addEventListener("scroll", changeColor);
+
+  const navigate = useNavigate();
+
+  function navigatePage(){
+    navigate('/contact')
+  }
 
   return (
     <Box
@@ -122,7 +128,7 @@ const Navbar = () => {
             </Typography>
           </Link>
 
-          <button className="my-button2">Contact us</button>
+          <button className="my-button2" onClick={navigatePage} >Contact us</button>
         </Stack>
       </Stack>
     </Box>

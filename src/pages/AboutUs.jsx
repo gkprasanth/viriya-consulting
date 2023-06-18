@@ -9,6 +9,7 @@ import cp from "../assets/cp.jpg";
 import { useEffect } from "react";
 import Contact from "../components/Contact";
 import KeyStrengths from "../components/KeyStrengths";
+import ContactFooter from "../components/ContactFooter";
 
 
 const list = [
@@ -267,6 +268,7 @@ const AboutUs = () => {
         </Stack>
       </Container>
       <KeyStrengths />
+      <ContactFooter/>
     </>
   );
 };

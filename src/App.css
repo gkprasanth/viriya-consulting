@@ -66,6 +66,7 @@ body {
   width: fit-content;
   margin: auto;
   font-family: "Nunito", sans-serif;
+  
 }
 
 .my-button1:hover {
@@ -143,3 +144,15 @@ body {
     transform: translateX(-100%);
   }
 }
+
+
+
+
+/* 
+  Form
+*/
+
+.container{
+  width: 50%;
+}
+

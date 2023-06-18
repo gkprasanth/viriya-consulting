@@ -26,7 +26,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/slider" element={<Carousel />} />
         </Routes>
-        <ContactFooter/>
+        
         <Footer/>
         
       </Router>

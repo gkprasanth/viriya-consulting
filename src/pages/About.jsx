@@ -82,6 +82,8 @@ const About = () => {
                   justifyContent: "center",
                   alignItems: "center",
                 },
+
+
                 "@media (max-width: 800px)": {
                   width: "97%",
                   fontSize: "1.1rem",

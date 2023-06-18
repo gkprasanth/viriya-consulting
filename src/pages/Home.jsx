@@ -1,13 +1,27 @@
 import React from "react";
 import "../App.css";
 import hero from "../assets/hero.jpg";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import { Stack, Typography } from "@mui/material";
 import About from "./About";
 import OurServices from "../components/OurServices";
 import h1 from "../assets/h1.png";
 import { Fade } from "react-reveal";
 import ContactFooter from "../components/ContactFooter";
+
+
+
+
 const Home = () => {
+
+  function scroll(){
+  const height = window.innerHeight;
+  const vhPixels = height * 1
+  window.scrollBy(0, vhPixels);
+  }
+
+
   return (
     <>
       <Stack
@@ -55,7 +69,11 @@ const Home = () => {
             </Typography>
           </Fade>
           <Fade right duration={2000}>
-            <button className="my-button">About Us</button>
+            <button className="my-button"  onClick={scroll} >
+            
+              About Us
+              
+              </button>
           </Fade>
         </Stack>
         <Fade right duration={3000}>
@@ -72,7 +90,7 @@ const Home = () => {
       </Stack>
       <About />
       <OurServices />
-
+      <ContactFooter/>
       
     </>
   );

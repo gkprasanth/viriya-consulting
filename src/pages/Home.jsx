@@ -42,7 +42,7 @@ const Home = () => {
           p={5}
           gap={2}
         >
-          <Fade left duration={1000}>
+          <Fade left duration={500}>
             <Typography
               variant="caption"
               sx={{
@@ -56,7 +56,7 @@ const Home = () => {
             </Typography>
           </Fade>
 
-          <Fade right duration={1500}>
+          <Fade right duration={1000}>
             <Typography
               variant="body1"
               sx={{
@@ -67,7 +67,7 @@ const Home = () => {
               Expert Recruitment Consultants at Your Service
             </Typography>
           </Fade>
-          <Fade right duration={2000}>
+          <Fade right duration={1000}>
             <button className="my-button"  onClick={scroll} >
             
               About Us
@@ -75,7 +75,7 @@ const Home = () => {
               </button>
           </Fade>
         </Stack>
-        <Fade right duration={3000}>
+        <Fade right duration={2000}>
           <img
             src={h1}
             alt="hero.png"

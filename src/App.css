@@ -6,6 +6,7 @@ body {
   background-image: url("./App.jsx/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .my-button {
